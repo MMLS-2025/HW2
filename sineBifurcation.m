@@ -1,7 +1,7 @@
-du = 0.001;
+du = 0.0001;
 uu = 0:du:1;
-n_transient = 500;
-n_period = 100;
+n_transient = 2000;
+n_period = 500;
 x0 = 0.5;
 
 hold on
@@ -17,4 +17,5 @@ for i=1:length(uu)
 end
 xlabel('\mu');
 ylabel('x');
-title('Sine Bifuration Diagram')
+title('Sine Bifurcation Diagram')
+saveas(gcf, 'sb.png')

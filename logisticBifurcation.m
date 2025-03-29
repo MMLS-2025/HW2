@@ -1,7 +1,7 @@
-dr = 0.001;
+dr = 0.0001;
 rr = 0:dr:4;
-n_transient = 500;
-n_period = 100;
+n_transient = 2000;
+n_period = 500;
 x0 = 0.5;
 
 hold on
@@ -17,4 +17,5 @@ for i=1:length(rr)
 end
 xlabel('r');
 ylabel('x');
-title('Logistic Bifuration Diagram')
+title('Logistic Bifurcation Diagram')
+saveas(gcf, 'lb.png')
